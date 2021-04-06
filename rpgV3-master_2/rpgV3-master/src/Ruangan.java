@@ -29,7 +29,7 @@ public class Ruangan {
         // init ruangan
         // init pintu, kunci dan roti.
         objPintu = new Pintu("Pintu Exit","terkunci");
-        objNPC = new NPC();
+        objNPC = new NPC("Penjaga Kunci");
 
         objRoti  = new Item("Roti","Normal");
         objRoti.setDeskripsi("Roti rasa coklat dalam bungkusan plastik");
