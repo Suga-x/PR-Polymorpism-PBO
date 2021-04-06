@@ -20,19 +20,17 @@ public class Senjata extends Item {
     public void prosesAksi(int subpil){
         //1 jika di ruangan ada senjata
         //2 jika di ruangan tak ada senjata
-        if (subpil==1){
-            //1 mengambil senjata
-            //2 memakai senjata
-            int pil2=0;
-                if (pil2==1){
-                    System.out.println("Mengambil Senjata...");
-                    objitem.diambil();
-                }else if (pil2==2){
-                    System.out.println("Memakai senjata..");
-
-                    }
-
+        if (pil == 1) {
+            System.out.println(getDeskripsi());
+        } else if (pil == 2) {  //bisa ambil atau buang
+            if (objRuangan == null) {
+                //dipegang player, buang ke ruangan
+                dibuang();
+            } else {
+                //ada di ruangan, diambil player
+                diambil();
             }
+        }
         }
 
     public int cariSenjata(String namaItem , String jenis){
