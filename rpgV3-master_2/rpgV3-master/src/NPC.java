@@ -6,10 +6,10 @@ public class NPC  extends Item {
     private GameInfo objGameInfo;
     private boolean isKenal = false;
 
-    public NPC(String nama) {
-        super(nama);
+    public NPC(String nama,String jenis) {
+        super(nama,jenis);
         //init kunci
-        objKunci = new Item("Kunci");
+        objKunci = new Item("Kunci","khusus");
         objKunci.setDeskripsi("Sebuah kunci kecil yang sudah agak berkarat");
 
         //aksi npc
