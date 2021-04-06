@@ -11,3 +11,5 @@ Apa yang baru?
 3.class pintu merupakan subclass dari item
 4.menambahkan class senjata yang merupakan subclass dari item
 5.menambahka item lain seperti kapak(senjata)
+6.player memiliki daya serang
+
